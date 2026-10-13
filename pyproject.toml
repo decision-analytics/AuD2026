@@ -1,0 +1,17 @@
+[project]
+name = "aud-wise26"
+version = "0.1.0"
+description = "Algorithmen und Datenstrukturen – Vorlesungsmaterial (Jupyter + RISE)"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "notebook==6.5.7",    # klassisches Notebook; RISE läuft nicht unter Notebook 7
+    "rise==5.7.1",
+    "setuptools",         # stellt distutils bereit (von Notebook 6 unter Python 3.12 benötigt)
+    "ipykernel",
+    "numpy",
+    "matplotlib",
+    "networkx",
+]
+
+[tool.uv]
+package = false
